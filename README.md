@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README #
 ## Tutorial for showing the implementations
 This README would normally document whatever steps are necessary to get your application up and running.
@@ -27,3 +28,7 @@ This README would normally document whatever steps are necessary to get your app
 
 * Repo owner or admin
 * Other community or team contact
+=======
+# FnCompJEE
+A Website built using Java with Filenet Components
+>>>>>>> 47a78e788c5a2e221e071a27617f157a0f705b2e
