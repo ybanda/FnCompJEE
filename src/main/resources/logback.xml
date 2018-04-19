@@ -8,9 +8,9 @@
         </encoder>
     </appender>
 
-    <!-- <logger name="com.hellokoding.account">
+    <logger name="com.mastertutorial.mvc">
         <level value="debug"/>
-    </logger> -->
+    </logger>
 
     <logger name="org.springframework">
         <level value="info"/>
