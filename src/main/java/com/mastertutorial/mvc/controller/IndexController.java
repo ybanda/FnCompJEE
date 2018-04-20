@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.mastertutorial.mvc.core.SetterInjectionBeanImpl;
+import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
 
 @Controller
 @RequestMapping("/index")

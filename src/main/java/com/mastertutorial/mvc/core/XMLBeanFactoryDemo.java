@@ -6,6 +6,8 @@ package com.mastertutorial.mvc.core;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 
+import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
+
 /**
  * @author Yashwanth
  *

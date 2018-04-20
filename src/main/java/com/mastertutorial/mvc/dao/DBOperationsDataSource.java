@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.mastertutorial.mvc.core;
+package com.mastertutorial.mvc.dao;
 
 /**
  * @author Yashwanth
  *
  */
-public interface DBOperations {
+public interface DBOperationsDataSource {
 
 	public int fetchCourseDescrption(String courseId);
 	public String fetchCourseName(String courseId );

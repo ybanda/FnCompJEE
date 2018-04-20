@@ -8,6 +8,10 @@ import java.util.Date;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.mastertutorial.mvc.dao.SetterInjectionBean;
+import com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl;
+import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
+
 /**
  * @author Yashwanth
  *
@@ -33,6 +37,9 @@ public class ApplicationContextDemo {
 
 		Date date =(Date)context.getBean("date");
 		System.out.println(date.toString());
+		
+		DBOperationsDataSourceImpl dbOperations = (DBOperationsDataSourceImpl)context.getBean("dbOperations");
+		System.out.println(dbOperations.fetchCourseName("NodeJS"));
 
 	}
 }

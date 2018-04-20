@@ -1,7 +1,9 @@
 /**
  * 
  */
-package com.mastertutorial.mvc.core;
+package com.mastertutorial.mvc.dao.impl;
+
+import com.mastertutorial.mvc.dao.SetterInjectionBean;
 
 /**
  * @author Yashwanth

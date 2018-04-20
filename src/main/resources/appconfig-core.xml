@@ -1,0 +1,63 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<mvc:annotation-driven />
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:database.properties</value>
+		</property>
+	</bean>
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<bean id="setterInjectionBean"
+		class="com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl">
+		<property name="message" value="Welcome to Setter Injection"></property>
+	</bean>
+
+	<bean id="constructorInjectionBean"
+		class="com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl">
+		<constructor-arg
+			value="Welcome to Constructor Injection" />
+	</bean>
+	<bean id="constructorInjectionBeans"
+		class="com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl">
+		<constructor-arg
+			value="Welcome to Constructor Injection" />
+		<constructor-arg value="Constructor #3 Injection" />
+		<constructor-arg value="22" type="int" />
+	</bean>
+
+	<bean id="date" class="java.util.Date">
+		<property name="year" value="118"></property>
+		<property name="month" value="8"></property>
+		<property name="date" value="11" />
+	</bean>
+
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+	<bean id="dbOperations"
+		class="com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</beans>

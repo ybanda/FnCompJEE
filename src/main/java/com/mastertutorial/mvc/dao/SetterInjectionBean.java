@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.mastertutorial.mvc.core;
+package com.mastertutorial.mvc.dao;
 
 /**
  * @author Yashwanth

@@ -1,25 +1,31 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mastertutorial</groupId>
-  <artifactId>FnCompJEE</artifactId>
-  <packaging>war</packaging>
-  <version>1.0.1-SNAPSHOT</version>
-  <properties>
-  
-        <jdk.version>1.8</jdk.version>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mastertutorial</groupId>
+	<artifactId>FnCompJEE</artifactId>
+	<packaging>war</packaging>
+	<version>1.0.1-SNAPSHOT</version>
+	<properties>
+
+		<jdk.version>1.8</jdk.version>
 		<springframework.version>4.2.0.RELEASE</springframework.version>
 		<jackson.version>2.5.3</jackson.version>
 		<jstl.version>1.2</jstl.version>
-        <junit.version>3.8.1</junit.version>
-        <logback.version>1.1.3</logback.version>
+		<junit.version>3.8.1</junit.version>
+		<logback.version>1.1.3</logback.version>
 	</properties>
-  <name>FnCompJEE</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-  <dependency>
+	<name>FnCompJEE</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
 		<dependency>
@@ -27,7 +33,11 @@
 			<artifactId>spring-tx</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
-
+		<!-- <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${springframework.version}</version>
+		</dependency> -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -43,32 +53,37 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-    <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
 
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
-  </dependencies>
-  <build>
-  
-  	<pluginManagement>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.9</version>
+		</dependency>
+	</dependencies>
+	<build>
+
+		<pluginManagement>
 			<plugins>
 				<plugin>
-			        <groupId>org.apache.maven.plugins</groupId>
-			        <artifactId>maven-compiler-plugin</artifactId>
-			        <version>3.3</version>
-			        <configuration>
-			            <source>1.8</source>
-			            <target>1.8</target>
-			        </configuration>
-			    </plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.3</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-war-plugin</artifactId>
@@ -82,6 +97,6 @@
 			</plugins>
 
 		</pluginManagement>
-    <finalName>FnCompJEE</finalName>
-  </build>
+		<finalName>FnCompJEE</finalName>
+	</build>
 </project>

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.mastertutorial.mvc.core;
+package com.mastertutorial.mvc.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,11 +10,13 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import com.mastertutorial.mvc.dao.DBOperationsDataSource;
+
 /**
  * @author Yashwanth
  *
  */
-public class DBOperationsBean implements DBOperations{
+public class DBOperationsDataSourceImpl implements DBOperationsDataSource{
 
 	DataSource dataSource;
 	
@@ -46,7 +48,7 @@ public class DBOperationsBean implements DBOperations{
 				ResultSet resultSet  = preparedStatement.executeQuery()){
 			
 			while(resultSet.next()) {
-				courseName = resultSet.getString(0);
+				courseName = resultSet.getString(1);
 			}
 			
 			
@@ -59,6 +61,8 @@ public class DBOperationsBean implements DBOperations{
 	}
 	
 	private PreparedStatement createPreparedStatment(Connection connection , Object identifier) throws SQLException {
+		
+		System.out.println(" Name ::"+identifier.toString());
 		String sql = "select name from topic where id=?";
 		PreparedStatement preparedStatement = connection.prepareStatement(sql);
 				preparedStatement.setString(1, identifier.toString());
