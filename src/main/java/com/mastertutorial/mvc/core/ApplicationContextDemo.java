@@ -37,9 +37,16 @@ public class ApplicationContextDemo {
 
 		Date date =(Date)context.getBean("date");
 		System.out.println(date.toString());
-		
-		DBOperationsDataSourceImpl dbOperations = (DBOperationsDataSourceImpl)context.getBean("dbOperations");
-		System.out.println(dbOperations.fetchCourseName("NodeJS"));
 
+		DBOperationsDataSourceImpl dbOperations = (DBOperationsDataSourceImpl)context.getBean("dbOperations");
+		System.out.println("Course Name = "+dbOperations.fetchCourseName("NodeJS"));
+		System.out.println("Course Description = "+dbOperations.fetchCourseDescrption("NodeJS"));
+		System.out.println("Course Count = "+dbOperations.fetchTotalCourses());
+		System.out.println("Total Records Deleted ="+dbOperations.deleteCourse("BootIcon"));
+		dbOperations.addCourse("BootIcon", "Bootstap Icons", "Bootstrap Icons for rich UI");
+		dbOperations.updateCourseReturnCount("BootIcon", "Bootstap UI Icons", "Bootstrap 4 Icons for rich UI");
+
+		System.out.println("Table Count ="+dbOperations.getTablecountFromStoreProc("test"));
+		
 	}
 }
