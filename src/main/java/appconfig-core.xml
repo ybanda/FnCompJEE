@@ -35,4 +35,12 @@
 		<property name="month" value="8"></property>
 		<property name="date" value="11"/>
     </bean>
+    
+    <bean id ="dataSource" class="org.springframework.jdbc.core.JdbcTemplate">
+    	<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+    	<property name="url" value="jdbc:mysql://localhost:3306/test"/>
+    	<property name="username" value="admin"/>
+    	<property name="password" value="admin"/>
+    </bean>
+    
 </beans>
