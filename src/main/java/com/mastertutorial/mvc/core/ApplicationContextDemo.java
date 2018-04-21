@@ -40,11 +40,11 @@ public class ApplicationContextDemo {
 		SetterInjectionBean constructorInjectionBeans1 = (SetterInjectionBean)context.getBean("constructorInjectionBeans");
 		constructorInjectionBeans1.printMessageWithData("sadasda", 12," Message :: ");
 		
-		AnnotationConfigApplicationContext acontext = new AnnotationConfigApplicationContext();
+		/*AnnotationConfigApplicationContext acontext = new AnnotationConfigApplicationContext();
 		acontext.scan("com");
 		acontext.refresh();
 		AnnotationBeanImpl annotationBean = (AnnotationBeanImpl)acontext.getBean("annotateBean");
-		annotationBean.printHelloWithAnnotations();
+		annotationBean.printHelloWithAnnotations();*/
 
 		Date date =(Date)context.getBean("date");
 		System.out.println(date.toString());
