@@ -5,13 +5,24 @@
  http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<mvc:annotation-driven />
-	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<bean id="annotateBean" class="com.mastertutorial.mvc.dao.impl.AnnotationBeanImpl"></bean>
+<bean id="dt" class="java.util.Date"/>
+	<!-- Resource Mapping Configuration -->
+
+	<mvc:resources mapping="/resources/**"
+		location="/resources/" />
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location">
+		
 			<value>classpath:database.properties</value>
+			<!-- <value>classpath:application.properties</value> -->
+		
 		</property>
 	</bean>
+
+	<!-- Internal View Mapping Configuration -->
+
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
@@ -22,15 +33,25 @@
 		</property>
 	</bean>
 
+	<!-- Setter Injection -->
+
 	<bean id="setterInjectionBean"
 		class="com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl">
 		<property name="message" value="Welcome to Setter Injection"></property>
 	</bean>
+	<bean id="date" class="java.util.Date">
+		<property name="year" value="118"></property>
+		<property name="month" value="8"></property>
+		<property name="date" value="11" />
+	</bean>
+
+
+	<!-- Constructor Injection -->
 
 	<bean id="constructorInjectionBean"
 		class="com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl">
 		<constructor-arg
-			value="Welcome to Constructor Injection" />
+			value="Welcome to Constructor Injection" type="String" />
 	</bean>
 	<bean id="constructorInjectionBeans"
 		class="com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl">
@@ -39,25 +60,16 @@
 		<constructor-arg value="Constructor #3 Injection" />
 		<constructor-arg value="22" type="int" />
 	</bean>
-
-	<bean id="date" class="java.util.Date">
-		<property name="year" value="118"></property>
-		<property name="month" value="8"></property>
-		<property name="date" value="11" />
+	<bean id="constructorInjectionBeansIndexes"
+		class="com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl"
+		init-method="myInit" 
+		destroy-method="myDestroy">
+		<constructor-arg
+			value="Welcome to Constructor Injection" index="0" />
+		<constructor-arg value="Constructor #3 Injection"
+			index="1" />
+		<constructor-arg value="22" type="int" index="2" />
 	</bean>
 
-
-	<bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName"
-			value="${jdbc.driverClassName}" />
-		<property name="url" value="${jdbc.url}" />
-		<property name="username" value="${jdbc.username}" />
-		<property name="password" value="${jdbc.password}" />
-	</bean>
-	<bean id="dbOperations"
-		class="com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl">
-		<property name="dataSource" ref="dataSource" />
-	</bean>
-
+	
 </beans>

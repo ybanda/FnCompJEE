@@ -13,13 +13,16 @@ import java.util.Map;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
 import com.mastertutorial.mvc.dao.DBOperationsDataSource;
 
 /**
  * @author Yashwanth
  *
  */
-public class DBOperationsDataSourceImpl implements DBOperationsDataSource{
+public class DBOperationsDataSourceImpl implements DBOperationsDataSource,InitializingBean,DisposableBean{
 
 	DataSource dataSource;
 
@@ -233,5 +236,18 @@ public class DBOperationsDataSourceImpl implements DBOperationsDataSource{
 			exception.printStackTrace();
 		}
 		return 0;
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		System.out.println(" DBOperationsDataSourceImpl :: Destroy() called");
+		
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+
+		System.out.println(" DBOperationsDataSourceImpl :: afterPropertiesSet() called");
+		
 	}
 }
