@@ -1,14 +1,20 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xmlns="http://www.springframework.org/schema/beans"
-	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/beans
- http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd 
+        http://www.springframework.org/schema/mvc 
+	 	http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<mvc:annotation-driven />
 	<import resource="classpath:spring-hbm.xml" />
-	
-	<bean id="annotateBean" class="com.mastertutorial.mvc.dao.impl.AnnotationBeanImpl"></bean>
-<bean id="dt" class="java.util.Date"/>
+
+	<bean id="annotateBean"
+		class="com.mastertutorial.mvc.dao.impl.AnnotationBeanImpl"></bean>
+	<bean id="dt" class="java.util.Date" />
 	<!-- Resource Mapping Configuration -->
 
 	<mvc:resources mapping="/resources/**"
@@ -16,15 +22,16 @@
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location">
-		
+
 			<value>classpath:database.properties</value>
 			<!-- <value>classpath:application.properties</value> -->
-		
+
 		</property>
 	</bean>
 
 	<!-- Internal View Mapping Configuration -->
-
+	<context:component-scan
+		base-package="com.mastertutorial.mvc.dao.impl"></context:component-scan>
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
@@ -64,8 +71,7 @@
 	</bean>
 	<bean id="constructorInjectionBeansIndexes"
 		class="com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl"
-		init-method="myInit" 
-		destroy-method="myDestroy">
+		init-method="myInit" destroy-method="myDestroy">
 		<constructor-arg
 			value="Welcome to Constructor Injection" index="0" />
 		<constructor-arg value="Constructor #3 Injection"
@@ -73,5 +79,5 @@
 		<constructor-arg value="22" type="int" index="2" />
 	</bean>
 
-	
+
 </beans>

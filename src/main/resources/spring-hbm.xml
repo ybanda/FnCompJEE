@@ -3,6 +3,7 @@
 	xmlns="http://www.springframework.org/schema/beans"
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
+
 	<bean id="hbmds"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"
@@ -28,7 +29,7 @@
 		<prop key="show_sql">true</prop>
 	</props>
 </property>
-
+<property name="packagesToScan" value="com"/>
 </bean>
 	
 	<bean id="hbmTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">

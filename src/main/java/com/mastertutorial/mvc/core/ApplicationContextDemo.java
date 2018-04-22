@@ -4,22 +4,23 @@
 package com.mastertutorial.mvc.core;
 
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.mastertutorial.mvc.dao.SetterInjectionBean;
-import com.mastertutorial.mvc.dao.TopicAudit;
 import com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl;
 import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
+import com.mastertutorial.mvc.dao.impl.TopicAuditAnnotateImpl;
 import com.mastertutorial.mvc.dao.impl.TopicAuditImpl;
 
 /**
  * @author Yashwanth
  *
- */
+// */
+/*@ComponentScan(basePackages= {"com.mastertutorial.mvc.dao.impl"})*/
 public class ApplicationContextDemo {
 
 	public static void main(String[] args) {
@@ -79,6 +80,14 @@ public class ApplicationContextDemo {
 		
 		TopicAuditImpl topicAudit = (TopicAuditImpl)context.getBean("hbmTopicAudit");
 		for(com.mastertutorial.mvc.model.TopicAudit audit:topicAudit.getData()) {
+			System.out.println(" Topic details :: Id :: "+audit.getId() +"\t :: Topic Id :: "+audit.getTopicId()+" \t :: Topic Date :: "+audit.getDate_updated_ts()
+			+"\t Topic Date Updated :: "+audit.getDate_updated_ts().toString() );
+			
+		}
+		System.out.println(" ------------------------Hibernate With Annotations --------------------------------");
+	
+		TopicAuditAnnotateImpl topicAnnotate = (TopicAuditAnnotateImpl)context.getBean("topicAuditAnnotate");
+		for(com.mastertutorial.mvc.model.TopicAuditAnnotate audit:topicAnnotate.getData()) {
 			System.out.println(" Topic details :: Id :: "+audit.getId() +"\t :: Topic Id :: "+audit.getTopicId()+" \t :: Topic Date :: "+audit.getDate_updated_ts()
 			+"\t Topic Date Updated :: "+audit.getDate_updated_ts().toString() );
 			
