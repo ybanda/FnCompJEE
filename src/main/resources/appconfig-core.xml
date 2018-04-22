@@ -5,6 +5,7 @@
  http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<mvc:annotation-driven />
+	
 	<bean id="annotateBean" class="com.mastertutorial.mvc.dao.impl.AnnotationBeanImpl"></bean>
 <bean id="dt" class="java.util.Date"/>
 	<!-- Resource Mapping Configuration -->

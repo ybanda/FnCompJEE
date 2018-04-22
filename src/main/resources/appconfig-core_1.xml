@@ -35,10 +35,29 @@
  	</property>
  </bean>
 
-<!-- Event Handling -->
+<!--  Event Handling -->
 <bean id="myListener" class="com.mastertutorial.mvc.core.MyListener"/>
 
 <!--  Bean Post Processor Configuration -->
-
 <bean id="myProcessor" class="com.mastertutorial.mvc.core.MyProcessor"/>
+
+<!--  Spring DAO Configuration -->
+<bean id="dataSourceJT"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+	<property name="dataSource" ref="dataSourceJT"/>
+</bean>
+
+<bean id="dbOperationsJT"
+		class="com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate" />
+		<!-- <property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="dataSourcess"><ref parent="dataSource"/></property>
+ -->	</bean>
 </beans>

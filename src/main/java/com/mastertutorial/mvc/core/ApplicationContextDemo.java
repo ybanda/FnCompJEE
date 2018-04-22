@@ -54,9 +54,13 @@ public class ApplicationContextDemo {
 		System.out.println("Course Description = "+dbOperations.fetchCourseDescrption("NodeJS"));
 		System.out.println("Course Count = "+dbOperations.fetchTotalCourses());
 		System.out.println("Total Records Deleted ="+dbOperations.deleteCourse("BootIcon"));
-		dbOperations.addCourse("BootIcon", "Bootstap Icons", "Bootstrap Icons for rich UI");
-		dbOperations.updateCourseReturnCount("BootIcon", "Bootstap UI Icons", "Bootstrap 4 Icons for rich UI");
+		dbOperations.addCourse("BootIcon", "Bootstap Icons", "Bootstrap Icons for rich UI",false);
+		dbOperations.updateCourseReturnCount("BootIcon", "Bootstap UI Icons", "Bootstrap 4 Icons for rich UI",false);
 
+		
+
+		DBOperationsDataSourceImpl dbOperationsJT = (DBOperationsDataSourceImpl)context.getBean("dbOperationsJT");
+		dbOperationsJT.addCourse("Scala", "Scala Framework", "Scala , A Java based Framework",true);
 		System.out.println("Table Count ="+dbOperations.getTablecountFromStoreProc("test"));
 	
 		// I18n Testing

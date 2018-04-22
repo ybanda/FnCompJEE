@@ -15,6 +15,8 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.mastertutorial.mvc.dao.DBOperationsDataSource;
 
@@ -25,6 +27,23 @@ import com.mastertutorial.mvc.dao.DBOperationsDataSource;
 public class DBOperationsDataSourceImpl implements DBOperationsDataSource,InitializingBean,DisposableBean{
 
 	DataSource dataSource;
+	
+	/**
+	 * @return the jdbcTemplate
+	 */
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	/**
+	 * @param jdbcTemplate the jdbcTemplate to set
+	 */
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	
+	JdbcTemplate jdbcTemplate;
 
 	/**
 	 * @return the dataSource
@@ -137,28 +156,33 @@ public class DBOperationsDataSourceImpl implements DBOperationsDataSource,Initia
 	/**
 	 * 
 	 */
-	public void addCourse(String id, String name, String description) {
+	public void addCourse(String id, String name, String description,boolean isJDBCTemplate) {
 		String sql = "insert into topic values(?,?,?)";
+		int count =0;
+		if(!isJDBCTemplate) {
 		Map<Integer,String> identifier = new HashMap<Integer,String>();
 		identifier.put(1,id);
 		identifier.put(2,description);
 		identifier.put(3, name);
-		int count =0;
+		
 		try(Connection connection = dataSource.getConnection();
 				PreparedStatement statement = createPreparedStatment(connection, identifier, sql)){
 			count  = statement.executeUpdate();
-			System.out.println(" "+count +" Record Inserted with id ="+id +", Name ="+name+", Description = "+description);
-		}
+			}
 		catch(Exception e) {
 			e.printStackTrace();
+		}}
+		else {
+			count = jdbcTemplate.update(sql,id,description,name);
 		}
+		System.out.println(" "+count +" Record Inserted with id ="+id +", Name ="+name+", Description = "+description +" is JDCTemplate ::"+isJDBCTemplate);
 	}
 
 
 	/*
 	 * 	
 	 */
-	public int updateCourseReturnCount(String id, String name, String description) {
+	public int updateCourseReturnCount(String id, String name, String description,boolean isJDBCTemplate) {
 		String sql="update topic SET name=? ,description=? where id =?";
 		Map<Integer,String> identifier = new HashMap<Integer,String>();
 		identifier.put(1, name);
@@ -168,8 +192,7 @@ public class DBOperationsDataSourceImpl implements DBOperationsDataSource,Initia
 				PreparedStatement statement = createPreparedStatment(connection, identifier, sql)){
 
 			System.out.println("  Record Updated with id ="+id +", Name ="+name+", Description = "+description);
-
-			return statement.executeUpdate();
+			return !isJDBCTemplate? statement.executeUpdate(): jdbcTemplate.update(sql,new Object[]{name,description,id});
 		}
 		catch(Exception e) {
 			e.printStackTrace();
