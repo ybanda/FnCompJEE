@@ -15,7 +15,6 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.mastertutorial.mvc.dao.DBOperationsDataSource;
@@ -27,7 +26,7 @@ import com.mastertutorial.mvc.dao.DBOperationsDataSource;
 public class DBOperationsDataSourceImpl implements DBOperationsDataSource,InitializingBean,DisposableBean{
 
 	DataSource dataSource;
-	
+
 	/**
 	 * @return the jdbcTemplate
 	 */

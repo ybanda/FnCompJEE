@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.mastertutorial.mvc.model.TopicAudit" table="topic_audit">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+
+		<property name="topicId" type="string" />
+
+		<property name="actions" type="string"/>
+
+		<property name="date_updated_ts" type="java.sql.Date" />
+	</class>
+</hibernate-mapping>

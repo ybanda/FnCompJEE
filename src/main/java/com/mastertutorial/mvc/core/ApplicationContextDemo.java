@@ -4,17 +4,17 @@
 package com.mastertutorial.mvc.core;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.mastertutorial.mvc.dao.AnnotationBean;
 import com.mastertutorial.mvc.dao.SetterInjectionBean;
-import com.mastertutorial.mvc.dao.impl.AnnotationBeanImpl;
+import com.mastertutorial.mvc.dao.TopicAudit;
 import com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl;
 import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
+import com.mastertutorial.mvc.dao.impl.TopicAuditImpl;
 
 /**
  * @author Yashwanth
@@ -59,8 +59,9 @@ public class ApplicationContextDemo {
 
 		
 
+		System.out.println("Total Records Deleted ="+dbOperations.deleteCourse("Scala2"));
 		DBOperationsDataSourceImpl dbOperationsJT = (DBOperationsDataSourceImpl)context.getBean("dbOperationsJT");
-		dbOperationsJT.addCourse("Scala", "Scala Framework", "Scala , A Java based Framework",true);
+		dbOperationsJT.addCourse("Scala2", "Scala Framework2", "Scala , A Java based Framework2",true);
 		System.out.println("Table Count ="+dbOperations.getTablecountFromStoreProc("test"));
 	
 		// I18n Testing
@@ -75,7 +76,16 @@ public class ApplicationContextDemo {
 		
 		SetterInjectionBeanImpl setterIndexBeans = (SetterInjectionBeanImpl)xmlContext.getBean("constructorInjectionBeansIndexes");
 		setterIndexBeans.printMessage();
+		
+		TopicAuditImpl topicAudit = (TopicAuditImpl)context.getBean("hbmTopicAudit");
+		for(com.mastertutorial.mvc.model.TopicAudit audit:topicAudit.getData()) {
+			System.out.println(" Topic details :: Id :: "+audit.getId() +"\t :: Topic Id :: "+audit.getTopicId()+" \t :: Topic Date :: "+audit.getDate_updated_ts()
+			+"\t Topic Date Updated :: "+audit.getDate_updated_ts().toString() );
+			
+		}
+		
 		xmlContext.close();
+		
 		
 	}
 }
