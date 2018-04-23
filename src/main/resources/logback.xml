@@ -1,24 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE logback>
-<configuration>
+<?xml version = "1.0" encoding = "utf-8"?>
+    <configuration>
+    	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+    		<encoder>
+    			<Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg %n
+    			</Pattern>
+    		</encoder>
+    		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+    			<level>TRACE</level>
+    		</filter>
+    	</appender>
 
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{15}#%line %msg\n</pattern>
-        </encoder>
-    </appender>
+      	<appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    		<File>c:/logs/FNCompJEE.log</File>
+    		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+    		    <!-- daily rollover -->
+    			<FileNamePattern>FNCompJEE.%d{yyyy-MM-dd}.log</FileNamePattern>
 
-    <logger name="com.mastertutorial.mvc">
-        <level value="debug"/>
-    </logger>
+    			<!-- keep 30 days' worth of history -->
+    			<maxHistory>30</maxHistory>			
+    		</rollingPolicy>
 
-    <logger name="org.springframework">
-        <level value="info"/>
-    </logger>
+    		<encoder>
+    			<Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n</Pattern>
+    		</encoder> 	    
+      	</appender>
+      	<appender name="minuteRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+    		    <!-- rollover every minute -->
+    			<FileNamePattern>c:/logs/minutes/FNCompJEE.%d{yyyy-MM-dd_HH-mm}.log</FileNamePattern>
 
-    <root>
-        <level value="error"/>
-        <appender-ref ref="STDOUT"/>
-    </root>
+    			<!-- keep 30 minutes' worth of history -->
+    			<maxHistory>30</maxHistory>			
+    		</rollingPolicy>
 
-</configuration>
+    		<encoder>
+    			<Pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</Pattern>
+    		</encoder> 	    
+      	</appender>  	
+
+    	<logger name="com.mastertutorial" additivity="false">
+    	    <level value="DEBUG" />
+    		<appender-ref ref="dailyRollingFileAppender"/>
+    		<appender-ref ref="minuteRollingFileAppender"/>
+    		<appender-ref ref="consoleAppender" />
+    	</logger>
+
+    	<root>
+    		<level value="INFO" />
+    		<appender-ref ref="consoleAppender" />
+    	</root>
+    </configuration>
+  
