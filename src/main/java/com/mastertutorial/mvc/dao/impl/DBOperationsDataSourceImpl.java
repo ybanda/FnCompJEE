@@ -13,6 +13,8 @@ import java.util.Map;
 
 import javax.sql.DataSource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -25,6 +27,8 @@ import com.mastertutorial.mvc.dao.DBOperationsDataSource;
  */
 public class DBOperationsDataSourceImpl implements DBOperationsDataSource,InitializingBean,DisposableBean{
 
+	private static Logger logger = LoggerFactory.getLogger(DBOperationsDataSourceImpl.class);
+	
 	DataSource dataSource;
 
 	/**
@@ -114,7 +118,7 @@ public class DBOperationsDataSourceImpl implements DBOperationsDataSource,Initia
 	 */
 	private PreparedStatement createPreparedStatment(Connection connection , Map<Integer,String> identifier,String sql) throws Exception {
 
-		System.out.println(" Name ::"+identifier.toString());
+		logger.info(" Name ::"+identifier.toString());
 		PreparedStatement preparedStatement = connection.prepareStatement(sql);
 		if(identifier!=null && identifier.size()!=0) {
 			identifier.forEach((key,value) ->{
@@ -174,7 +178,7 @@ public class DBOperationsDataSourceImpl implements DBOperationsDataSource,Initia
 		else {
 			count = jdbcTemplate.update(sql,id,description,name);
 		}
-		System.out.println(" "+count +" Record Inserted with id ="+id +", Name ="+name+", Description = "+description +" is JDCTemplate ::"+isJDBCTemplate);
+		logger.info(" "+count +" Record Inserted with id ="+id +", Name ="+name+", Description = "+description +" is JDCTemplate ::"+isJDBCTemplate);
 	}
 
 
@@ -190,7 +194,7 @@ public class DBOperationsDataSourceImpl implements DBOperationsDataSource,Initia
 		try(Connection connection = dataSource.getConnection();
 				PreparedStatement statement = createPreparedStatment(connection, identifier, sql)){
 
-			System.out.println("  Record Updated with id ="+id +", Name ="+name+", Description = "+description);
+			logger.info("  Record Updated with id ="+id +", Name ="+name+", Description = "+description);
 			return !isJDBCTemplate? statement.executeUpdate(): jdbcTemplate.update(sql,new Object[]{name,description,id});
 		}
 		catch(Exception e) {
@@ -262,14 +266,14 @@ public class DBOperationsDataSourceImpl implements DBOperationsDataSource,Initia
 
 	@Override
 	public void destroy() throws Exception {
-		System.out.println(" DBOperationsDataSourceImpl :: Destroy() called");
+		logger.info(" DBOperationsDataSourceImpl :: Destroy() called");
 		
 	}
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
 
-		System.out.println(" DBOperationsDataSourceImpl :: afterPropertiesSet() called");
+		logger.info(" DBOperationsDataSourceImpl :: afterPropertiesSet() called");
 		
 	}
 }

@@ -36,11 +36,11 @@
  </bean>
 
 <!--  Event Handling -->
-<bean id="myListener" class="com.mastertutorial.mvc.core.MyListener"/>
-
+<!-- <bean id="myListener" class="com.mastertutorial.mvc.core.MyListener"/>
+ -->
 <!--  Bean Post Processor Configuration -->
-<bean id="myProcessor" class="com.mastertutorial.mvc.core.MyProcessor"/>
-
+<!-- <bean id="myProcessor" class="com.mastertutorial.mvc.core.MyProcessor"/>
+ -->
 <!--  Spring DAO Configuration -->
 <bean id="dataSourceJT"
 		class="org.apache.commons.dbcp.BasicDataSource">
@@ -60,4 +60,9 @@
 		<!-- <property name="dataSource"><ref bean="dataSource" /></property>
 		<property name="dataSourcess"><ref parent="dataSource"/></property>
  -->	</bean>
+ 
+ <!--  Email -->
+ 
+ <bean id="sendEmailImpl" class="com.mastertutorial.mvc.mail.SendEmailImpl"/>
+ 
 </beans>

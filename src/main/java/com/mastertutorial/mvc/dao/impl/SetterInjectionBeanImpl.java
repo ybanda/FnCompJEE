@@ -3,6 +3,8 @@
  */
 package com.mastertutorial.mvc.dao.impl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
@@ -18,6 +20,7 @@ import com.mastertutorial.mvc.dao.SetterInjectionBean;
  */
 public class SetterInjectionBeanImpl implements SetterInjectionBean,BeanNameAware,BeanFactoryAware,ApplicationContextAware{
 
+	private static Logger logger = LoggerFactory.getLogger(SetterInjectionBeanImpl.class);
 	public String message;
 	public String name;
 	public int id;
@@ -32,7 +35,7 @@ public class SetterInjectionBeanImpl implements SetterInjectionBean,BeanNameAwar
 	public SetterInjectionBeanImpl(String name) {
 		super();
 		this.name = name;
-		System.out.println("SetterInjectionBeanImpl :: Inside of Injection Bean Constructor");
+		logger.info("SetterInjectionBeanImpl :: Inside of Injection Bean Constructor");
 	}
 	
 	public SetterInjectionBeanImpl(String name , String message, int id){
@@ -70,7 +73,7 @@ public class SetterInjectionBeanImpl implements SetterInjectionBean,BeanNameAwar
 
 	public void setMessage(String message) {
 
-		System.out.println("SetterInjectionBeanImpl :: Inside of Setter Injection Bean");
+		logger.info("SetterInjectionBeanImpl :: Inside of Setter Injection Bean");
 		this.message = message;
 	}
 	
@@ -86,36 +89,36 @@ public class SetterInjectionBeanImpl implements SetterInjectionBean,BeanNameAwar
 	@Override
 	public void printMessageWithData(String name, int id, String message) {
 		
-		System.out.println("SetterInjectionBeanImpl :: printMessageWithData :: Name="
+		logger.info("SetterInjectionBeanImpl :: printMessageWithData :: Name="
 				+name+" Id ="+id+" Message ="+message);
 			
 	}
 	
 	
 	public void printMessage() {
-		System.out.println(" SetterInjectionBeanImpl :: Current Bean ="+bname
+		logger.info(" SetterInjectionBeanImpl :: Current Bean ="+bname
 				+"\n Is Singleton ="+ctx.isSingleton(bname)+"\n Is Prototype :: "+ctx.isPrototype(bname)
 				+"\n List of beans ::");
 	String ids[] = ctx.getBeanDefinitionNames();
 	int count =0;
 	for(String id :ids) {
 		count ++;
-		System.out.println(count +")"+id);
+		logger.info(count +")"+id);
 	}
-		System.out.println("SetterInjectionBeanImpl :: printMessage :: Name="
+		logger.info("SetterInjectionBeanImpl :: printMessage :: Name="
 				+name+" Id ="+id+" Message ="+message);
 			
 	}
 	
 	public void myInit() {
-		System.out.println(" SetterInjectionBeanImpl :: myInit is called");
-		System.out.println("Init :: Name="
+		logger.info(" SetterInjectionBeanImpl :: myInit is called");
+		logger.info("Init :: Name="
 				+name+" Id ="+id+" Message ="+message);
 			
 	}
 	
 	public void myDestroy() {
-		System.out.println("SetterInjectionBeanImpl :: myDestroy is called");
+		logger.info("SetterInjectionBeanImpl :: myDestroy is called");
 		id=0;
 		message=null;
 		name=null;
@@ -125,20 +128,20 @@ public class SetterInjectionBeanImpl implements SetterInjectionBean,BeanNameAwar
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		// TODO Auto-generated method stub
-		System.out.println("SetterInjectionBeanImpl :: Inside of setApplicationContext");
+		logger.info("SetterInjectionBeanImpl :: Inside of setApplicationContext");
 		this.ctx=applicationContext;
 	}
 
 	@Override
 	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-		System.out.println("SetterInjectionBeanImpl :: Inside of Set Bean Factory");
+		logger.info("SetterInjectionBeanImpl :: Inside of Set Bean Factory");
 		this.beanFactory=beanFactory;
 		
 	}
 
 	@Override
 	public void setBeanName(String name) {
-		System.out.println("SetterInjectionBeanImpl :: Inside of set Bean Name");
+		logger.info("SetterInjectionBeanImpl :: Inside of set Bean Name");
 		this.bname=name;
 		
 	}
