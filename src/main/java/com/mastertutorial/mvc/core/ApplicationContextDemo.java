@@ -8,7 +8,6 @@ import java.util.Locale;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,8 +15,8 @@ import com.mastertutorial.mvc.dao.SetterInjectionBean;
 import com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl;
 import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
 import com.mastertutorial.mvc.dao.impl.TopicAuditAnnotateImpl;
-import com.mastertutorial.mvc.mail.SendEmailImpl;
 import com.mastertutorial.mvc.dao.impl.TopicAuditImpl;
+import com.mastertutorial.mvc.model.Student;
 
 /**
  * @author Yashwanth
@@ -97,6 +96,10 @@ public class ApplicationContextDemo {
 			+"\t Topic Date Updated :: "+audit.getDate_updated_ts().toString() );
 
 		}
+		Student student = (Student)context.getBean("student");
+		student.printThrowException();
+		
+		
 		/*SendEmailImpl email =(SendEmailImpl)context.getBean("sendEmailImpl");
 		email.sendEmailFromSpring();*/
 		xmlContext.close();

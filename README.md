@@ -13,6 +13,7 @@ A Website built using Java with Spring Components
 	
 	2) Spring Context
 	3) Spring AOP
+	
 	4) Spring DAO
 	5) Spring Web MVC
 	6) Spring ORM.

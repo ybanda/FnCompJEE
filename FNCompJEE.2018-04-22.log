@@ -1,0 +1,362 @@
+21:53:47.145 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Setter Injection Bean 
+21:53:47.148 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:53:47.157 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:53:47.158 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:53:47.162 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Injection Bean Constructor 
+21:53:47.164 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:53:47.165 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:53:47.166 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:53:47.169 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:53:47.169 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:53:47.170 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:53:47.172 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:53:47.173 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:53:47.174 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:53:47.175 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl -  SetterInjectionBeanImpl :: myInit is called 
+21:53:47.176 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - Init :: Name=Welcome to Constructor Injection Id =22 Message =Constructor #3 Injection 
+21:53:47.189 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: afterPropertiesSet() called 
+21:53:47.289 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: afterPropertiesSet() called 
+21:53:47.564 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Setter Injection Bean Message from Application Context =Welcome to Setter Injection 
+21:53:47.565 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Constructor Injection Bean Message from Application Context =Welcome to Constructor Injection 
+21:53:47.567 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Constructor Injection Beans #3 Message from Application Context Name =Welcome to Constructor Injection Id =22 Message =Constructor #3 Injection 
+21:53:47.568 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: printMessageWithData :: Name=sadasda Id =12 Message = Message ::  
+21:53:47.569 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Tue Sep 11 21:53:46 EDT 2018 
+21:53:47.724 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  Name ::{1=NodeJS} 
+21:53:47.773 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Course Name = Node 
+21:53:47.803 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  Name ::{1=NodeJS} 
+21:53:47.806 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Course Description = Node Description 
+21:53:47.873 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Course Count = 7 
+21:53:47.908 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Total Records Deleted =1 
+21:53:47.934 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  Name ::{1=BootIcon, 2=Bootstrap Icons for rich UI, 3=Bootstap Icons} 
+21:53:47.937 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  1 Record Inserted with id =BootIcon, Name =Bootstap Icons, Description = Bootstrap Icons for rich UI is JDCTemplate ::false 
+21:53:47.966 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  Name ::{1=Bootstap UI Icons, 2=Bootstrap 4 Icons for rich UI, 3=BootIcon} 
+21:53:47.967 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -   Record Updated with id =BootIcon, Name =Bootstap UI Icons, Description = Bootstrap 4 Icons for rich UI 
+21:53:48.057 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Total Records Deleted =1 
+21:53:48.212 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  1 Record Inserted with id =Scala2, Name =Scala Framework2, Description = Scala , A Java based Framework2 is JDCTemplate ::true 
+21:53:48.302 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Table Count =3 
+21:53:52.783 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Setter Injection Bean 
+21:53:52.784 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:53:52.784 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:53:52.785 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:53:52.788 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Injection Bean Constructor 
+21:53:52.789 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:53:52.790 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:53:52.790 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:53:52.792 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:53:52.793 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:53:52.793 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:53:52.795 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:53:52.796 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:53:52.797 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:53:52.797 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl -  SetterInjectionBeanImpl :: myInit is called 
+21:53:52.798 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - Init :: Name=Welcome to Constructor Injection Id =22 Message =Constructor #3 Injection 
+21:53:52.802 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: afterPropertiesSet() called 
+21:53:52.810 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: afterPropertiesSet() called 
+21:53:52.970 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Message #1=EFFACER, Message #2Not Found, Message #3ARRET, Message #4ANNULER 
+21:53:52.972 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl -  SetterInjectionBeanImpl :: Current Bean =constructorInjectionBeansIndexes
+ Is Singleton =true
+ Is Prototype :: false
+ List of beans :: 
+21:53:52.974 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 1)mvcContentNegotiationManager 
+21:53:52.975 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 2)org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0 
+21:53:52.976 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 3)mvcCorsConfigurations 
+21:53:52.977 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 4)org.springframework.format.support.FormattingConversionServiceFactoryBean#0 
+21:53:52.978 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 5)org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0 
+21:53:52.979 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 6)mvcUriComponentsContributor 
+21:53:52.980 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 7)org.springframework.web.servlet.handler.MappedInterceptor#0 
+21:53:52.982 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 8)org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0 
+21:53:52.983 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 9)org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0 
+21:53:52.984 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 10)org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0 
+21:53:52.988 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 11)org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping 
+21:53:52.989 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 12)org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter 
+21:53:52.990 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 13)org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter 
+21:53:53.001 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 14)hbmds 
+21:53:53.002 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 15)hbmSessionFactory 
+21:53:53.002 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 16)hbmTemplate 
+21:53:53.006 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 17)hbmTopicAudit 
+21:53:53.007 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 18)annotateBean 
+21:53:53.008 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 19)dt 
+21:53:53.009 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 20)mvcResourceUrlProvider 
+21:53:53.009 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 21)org.springframework.web.servlet.handler.MappedInterceptor#1 
+21:53:53.009 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 22)org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0 
+21:53:53.010 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 23)mvcPathMatcher 
+21:53:53.010 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 24)mvcUrlPathHelper 
+21:53:53.011 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 25)org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0 
+21:53:53.011 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 26)org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0 
+21:53:53.011 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 27)annotationBeanImpl 
+21:53:53.012 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 28)topicAuditAnnotate 
+21:53:53.012 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 29)org.springframework.context.annotation.internalConfigurationAnnotationProcessor 
+21:53:53.012 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 30)org.springframework.context.annotation.internalAutowiredAnnotationProcessor 
+21:53:53.013 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 31)org.springframework.context.annotation.internalRequiredAnnotationProcessor 
+21:53:53.013 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 32)org.springframework.context.annotation.internalCommonAnnotationProcessor 
+21:53:53.014 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 33)org.springframework.context.annotation.internalPersistenceAnnotationProcessor 
+21:53:53.014 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 34)org.springframework.context.event.internalEventListenerProcessor 
+21:53:53.015 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 35)org.springframework.context.event.internalEventListenerFactory 
+21:53:53.018 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 36)org.springframework.web.servlet.view.InternalResourceViewResolver#0 
+21:53:53.018 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 37)setterInjectionBean 
+21:53:53.018 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 38)date 
+21:53:53.019 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 39)constructorInjectionBean 
+21:53:53.019 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 40)constructorInjectionBeans 
+21:53:53.020 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 41)constructorInjectionBeansIndexes 
+21:53:53.021 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 42)dataSource 
+21:53:53.021 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 43)dbOperations 
+21:53:53.021 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 44)messageSource 
+21:53:53.022 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 45)dataSourceJT 
+21:53:53.023 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 46)jdbcTemplate 
+21:53:53.023 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 47)dbOperationsJT 
+21:53:53.024 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 48)sendEmailImpl 
+21:53:53.024 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 49)org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor 
+21:53:53.024 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 50)org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor 
+21:53:53.025 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: printMessage :: Name=Welcome to Constructor Injection Id =22 Message =Constructor #3 Injection 
+21:53:54.069 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 1	 :: Topic Id :: NodeJS 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.069 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 2	 :: Topic Id :: Node 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.070 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 3	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.071 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 4	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.071 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 5	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.071 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 6	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.072 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 7	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.072 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 8	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.073 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 9	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.073 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 10	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.074 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 11	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.074 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 12	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.074 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 13	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.075 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 14	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.075 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 15	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.075 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 16	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.076 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 17	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.076 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 18	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.077 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 19	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.077 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 20	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.077 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 21	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.078 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 22	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.079 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 23	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.079 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 24	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.079 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 25	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.080 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 26	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.080 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 27	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.081 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 28	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.081 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 29	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.081 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 30	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.082 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 31	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.082 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 32	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.082 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 33	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.083 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  ------------------------Hibernate With Annotations -------------------------------- 
+21:53:54.134 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 1	 :: Topic Id :: NodeJS 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.135 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 2	 :: Topic Id :: Node 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.135 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 3	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.135 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 4	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.136 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 5	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:53:54.136 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 6	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.136 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 7	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.137 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 8	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.137 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 9	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.138 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 10	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.138 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 11	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.138 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 12	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.139 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 13	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.139 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 14	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.139 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 15	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:53:54.140 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 16	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.140 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 17	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.140 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 18	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.141 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 19	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.142 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 20	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.142 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 21	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.142 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 22	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.143 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 23	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.143 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 24	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.143 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 25	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.144 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 26	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.144 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 27	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.144 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 28	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.144 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 29	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.145 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 30	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.145 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 31	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.146 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 32	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.146 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 33	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:53:54.167 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: Destroy() called 
+21:53:54.169 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: Destroy() called 
+21:53:54.171 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: myDestroy is called 
+21:54:57.118 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Setter Injection Bean 
+21:54:57.118 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:54:57.128 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:54:57.128 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Injection Bean Constructor 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:54:57.138 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:54:57.148 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl -  SetterInjectionBeanImpl :: myInit is called 
+21:54:57.148 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - Init :: Name=Welcome to Constructor Injection Id =22 Message =Constructor #3 Injection 
+21:54:57.158 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: afterPropertiesSet() called 
+21:54:57.238 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: afterPropertiesSet() called 
+21:54:57.408 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Setter Injection Bean Message from Application Context =Welcome to Setter Injection 
+21:54:57.418 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Constructor Injection Bean Message from Application Context =Welcome to Constructor Injection 
+21:54:57.418 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Constructor Injection Beans #3 Message from Application Context Name =Welcome to Constructor Injection Id =22 Message =Constructor #3 Injection 
+21:54:57.418 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: printMessageWithData :: Name=sadasda Id =12 Message = Message ::  
+21:54:57.418 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Tue Sep 11 21:54:56 EDT 2018 
+21:54:57.447 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  Name ::{1=NodeJS} 
+21:54:57.490 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Course Name = Node 
+21:54:57.520 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  Name ::{1=NodeJS} 
+21:54:57.520 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Course Description = Node Description 
+21:54:57.550 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Course Count = 7 
+21:54:57.600 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Total Records Deleted =1 
+21:54:57.620 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  Name ::{1=BootIcon, 2=Bootstrap Icons for rich UI, 3=Bootstap Icons} 
+21:54:57.620 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  1 Record Inserted with id =BootIcon, Name =Bootstap Icons, Description = Bootstrap Icons for rich UI is JDCTemplate ::false 
+21:54:57.640 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  Name ::{1=Bootstap UI Icons, 2=Bootstrap 4 Icons for rich UI, 3=BootIcon} 
+21:54:57.640 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -   Record Updated with id =BootIcon, Name =Bootstap UI Icons, Description = Bootstrap 4 Icons for rich UI 
+21:54:57.750 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Total Records Deleted =1 
+21:54:57.880 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  1 Record Inserted with id =Scala2, Name =Scala Framework2, Description = Scala , A Java based Framework2 is JDCTemplate ::true 
+21:54:57.950 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Table Count =3 
+21:55:01.985 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Setter Injection Bean 
+21:55:02.115 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:55:02.115 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:55:02.125 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:55:02.125 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Injection Bean Constructor 
+21:55:02.125 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:55:02.125 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:55:02.125 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:55:02.125 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:55:02.125 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:55:02.125 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:55:02.135 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of set Bean Name 
+21:55:02.135 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of Set Bean Factory 
+21:55:02.135 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: Inside of setApplicationContext 
+21:55:02.135 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl -  SetterInjectionBeanImpl :: myInit is called 
+21:55:02.135 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - Init :: Name=Welcome to Constructor Injection Id =22 Message =Constructor #3 Injection 
+21:55:02.135 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: afterPropertiesSet() called 
+21:55:02.145 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: afterPropertiesSet() called 
+21:55:02.235 [main] INFO  c.m.mvc.core.ApplicationContextDemo - Message #1=EFFACER, Message #2Not Found, Message #3ARRET, Message #4ANNULER 
+21:55:02.235 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl -  SetterInjectionBeanImpl :: Current Bean =constructorInjectionBeansIndexes
+ Is Singleton =true
+ Is Prototype :: false
+ List of beans :: 
+21:55:02.235 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 1)mvcContentNegotiationManager 
+21:55:02.235 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 2)org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0 
+21:55:02.235 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 3)mvcCorsConfigurations 
+21:55:02.235 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 4)org.springframework.format.support.FormattingConversionServiceFactoryBean#0 
+21:55:02.235 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 5)org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0 
+21:55:02.235 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 6)mvcUriComponentsContributor 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 7)org.springframework.web.servlet.handler.MappedInterceptor#0 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 8)org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 9)org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 10)org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 11)org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 12)org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 13)org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 14)hbmds 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 15)hbmSessionFactory 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 16)hbmTemplate 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 17)hbmTopicAudit 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 18)annotateBean 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 19)dt 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 20)mvcResourceUrlProvider 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 21)org.springframework.web.servlet.handler.MappedInterceptor#1 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 22)org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 23)mvcPathMatcher 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 24)mvcUrlPathHelper 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 25)org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 26)org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 27)annotationBeanImpl 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 28)topicAuditAnnotate 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 29)org.springframework.context.annotation.internalConfigurationAnnotationProcessor 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 30)org.springframework.context.annotation.internalAutowiredAnnotationProcessor 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 31)org.springframework.context.annotation.internalRequiredAnnotationProcessor 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 32)org.springframework.context.annotation.internalCommonAnnotationProcessor 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 33)org.springframework.context.annotation.internalPersistenceAnnotationProcessor 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 34)org.springframework.context.event.internalEventListenerProcessor 
+21:55:02.245 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 35)org.springframework.context.event.internalEventListenerFactory 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 36)org.springframework.web.servlet.view.InternalResourceViewResolver#0 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 37)setterInjectionBean 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 38)date 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 39)constructorInjectionBean 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 40)constructorInjectionBeans 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 41)constructorInjectionBeansIndexes 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 42)dataSource 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 43)dbOperations 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 44)messageSource 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 45)dataSourceJT 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 46)jdbcTemplate 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 47)dbOperationsJT 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 48)sendEmailImpl 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 49)org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - 50)org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor 
+21:55:02.255 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: printMessage :: Name=Welcome to Constructor Injection Id =22 Message =Constructor #3 Injection 
+21:55:03.093 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 1	 :: Topic Id :: NodeJS 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.093 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 2	 :: Topic Id :: Node 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.093 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 3	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.093 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 4	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.093 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 5	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 6	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 7	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 8	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 9	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 10	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 11	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 12	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 13	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 14	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 15	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 16	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 17	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 18	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 19	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 20	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 21	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 22	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 23	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.103 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 24	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.213 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 25	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 26	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 27	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 28	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 29	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 30	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 31	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 32	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 33	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 34	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.214 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  ------------------------Hibernate With Annotations -------------------------------- 
+21:55:03.274 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 1	 :: Topic Id :: NodeJS 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.274 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 2	 :: Topic Id :: Node 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.275 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 3	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.275 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 4	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.275 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 5	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-20	 Topic Date Updated :: 2018-04-20 
+21:55:03.276 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 6	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.276 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 7	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.277 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 8	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.277 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 9	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.277 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 10	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.278 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 11	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.278 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 12	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.278 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 13	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.279 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 14	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.279 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 15	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-21	 Topic Date Updated :: 2018-04-21 
+21:55:03.280 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 16	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.280 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 17	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.280 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 18	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.282 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 19	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.282 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 20	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.282 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 21	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.283 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 22	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.283 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 23	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.283 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 24	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.284 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 25	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.285 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 26	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.286 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 27	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.287 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 28	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.288 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 29	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.289 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 30	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.289 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 31	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.289 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 32	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.290 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 33	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.290 [main] INFO  c.m.mvc.core.ApplicationContextDemo -  Topic details :: Id :: 34	 :: Topic Id :: BootIcon 	 :: Topic Date :: 2018-04-22	 Topic Date Updated :: 2018-04-22 
+21:55:03.306 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: Destroy() called 
+21:55:03.306 [main] INFO  c.m.m.d.i.DBOperationsDataSourceImpl -  DBOperationsDataSourceImpl :: Destroy() called 
+21:55:03.306 [main] INFO  c.m.m.d.i.SetterInjectionBeanImpl - SetterInjectionBeanImpl :: myDestroy is called 

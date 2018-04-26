@@ -1,0 +1,37 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	    http://www.springframework.org/schema/beans/spring-beans.xsd 
+        http://www.springframework.org/schema/mvc 
+	 	http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<aop:config>
+		<aop:aspect id="log" ref="logging">
+			<aop:pointcut id="selectAll"
+				expression="execution(* com.mastertutorial.mvc.*.*(..))"/>
+			<aop:before method="beforeAdvice" pointcut-ref="selectAll"/>
+			<aop:after method="afterAdvice" pointcut-ref="selectAll"/>
+			<aop:after-returning pointcut-ref="selectAll"
+			returning="retVal" method="afterReturningAdvice"/>
+			
+			<aop:after-throwing pointcut-ref="selectAll"
+			throwing="ex" method="AfterThrowingAdvice"/>
+		</aop:aspect>
+	</aop:config>
+	
+	<bean id="student" class="com.mastertutorial.mvc.model.Student">
+		<property name="name" value="Yashwanth" />
+		<property name="age" value="99"/>
+	</bean>
+	
+	<bean id="logging" class="com.mastertutorial.mvc.core.Logging">
+		
+	</bean>
+</beans>
