@@ -16,6 +16,7 @@ import com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl;
 import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
 import com.mastertutorial.mvc.dao.impl.TopicAuditAnnotateImpl;
 import com.mastertutorial.mvc.dao.impl.TopicAuditImpl;
+import com.mastertutorial.mvc.model.Customer;
 import com.mastertutorial.mvc.model.Student;
 
 /**
@@ -97,7 +98,18 @@ public class ApplicationContextDemo {
 
 		}
 		Student student = (Student)context.getBean("student");
-		student.printThrowException();
+		System.out.println("Name = "+student.getName());
+		
+		
+		Customer  customer = (Customer)context.getBean("studentServiceProxy");
+		System.out.println("***************************");
+		System.out.println("Spring-AOP :: Name = "+customer.getName());
+		System.out.println("***************************");
+		System.out.println("Spring-AOP :: Site = "+customer.getSite());
+		if(!customer.getSite().contains("ybanda")) {
+			customer.printThrowException();
+		}
+		//student.printThrowException();
 		
 		
 		/*SendEmailImpl email =(SendEmailImpl)context.getBean("sendEmailImpl");

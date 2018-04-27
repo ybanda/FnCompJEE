@@ -12,6 +12,7 @@
         http://www.springframework.org/schema/aop 
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+<!--  AspectJ AOP configuration -->
 	<aop:config>
 		<aop:aspect id="log" ref="logging">
 			<aop:pointcut id="selectAll"
@@ -30,8 +31,45 @@
 		<property name="name" value="Yashwanth" />
 		<property name="age" value="99"/>
 	</bean>
+	<bean id="customer" class="com.mastertutorial.mvc.model.Customer">
+		<property name="name" value="Yashwanth AOP Calling" />
+		<property name="site" value="www.github.com/ybanda"/>
+	</bean>
+	<bean id="logging" class="com.mastertutorial.mvc.core.Logging"/>
 	
-	<bean id="logging" class="com.mastertutorial.mvc.core.Logging">
-		
+	<!-- Spring AOP configuration -->
+	<bean id="myexecuteBeforeAfterMethods" class="com.mastertutorial.mvc.aop.ExecuteBeforeAfterMethod"/>
+	<bean id="myexecuteAfterException" class="com.mastertutorial.mvc.aop.ExecuteAfterThrowingAdvice"/>
+	<bean id="myexecuteAroundException" class="com.mastertutorial.mvc.aop.ExecuteAroundMethod"/>
+	
+	<bean id="studentServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target" ref="customer"/>
+		<property name="interceptorNames">
+			<list> 
+				<value>customerAdvisor</value> 
+				<value>myexecuteAfterException</value>
+				<value>myexecuteAroundException</value>
+			</list>
+		</property>
+	</bean>
+	
+	 <bean id="customerPointcut"
+	class="org.springframework.aop.support.NameMatchMethodPointcut">
+	<property name="mappedName" value="getSites"></property>
+	</bean>
+	<bean id="customerAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="pointcut" ref="customerPointcut"></property>
+		<property name="advice" ref="myexecuteBeforeAfterMethods"></property>
+	</bean>
+	
+	<bean id="customerAdvisors"
+		class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="patterns">
+			<list>
+				<value>.*Sites.*</value>
+			</list>
+		</property>
+
+		<property name="advice" ref="myexecuteBeforeAfterMethods" />
 	</bean>
 </beans>
