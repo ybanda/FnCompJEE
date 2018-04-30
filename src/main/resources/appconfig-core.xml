@@ -14,6 +14,10 @@
 	<mvc:annotation-driven />
 	<import resource="classpath:spring-hbm.xml" />
 	<import resource="classpath:appconfig-aop.xml" />
+	
+	<import resource="classpath:appconfig-core_1.xml" />
+	
+	<import resource="classpath:appconfig-batch.xml" />
 
 	<bean id="annotateBean"
 		class="com.mastertutorial.mvc.dao.impl.AnnotationBeanImpl"></bean>
