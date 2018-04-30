@@ -16,5 +16,9 @@ A Website built using Java with Spring Components
 	4) Spring DAO
 	5) Spring Web MVC
 	6) Spring ORM.
-	7) Spring Batch
-	8) Quartz Scheduler
+	7) Spring Batch,Quartz Scheduler.
+	8) Spring Security,Secure Rest Calls with OAuth.
+	9) Junit and TestNg.
+	10) JMS + ActiveMQ.
+	11) SL4J Logger.
+	12) Multi-part File Upload
