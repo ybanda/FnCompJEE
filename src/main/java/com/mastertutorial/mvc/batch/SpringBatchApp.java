@@ -18,10 +18,17 @@ public class SpringBatchApp {
 
 	public static void main(String[] args) throws Exception {
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("appconfig-batch.xml");
-		JobLauncher jobLauncher =(JobLauncher)context.getBean("jobLauncher");
+		String batchName="appconfig-batch.xml";
+		String quartzBatchName="appconfig-quartz-batch.xml";
+		runSpringBatch(quartzBatchName);
+		//runSpringBatch(batchName);
+	}
+	
+	public static void runSpringBatch(String fileName)throws Exception  {
+		ApplicationContext context = new ClassPathXmlApplicationContext(fileName);
+	/*	JobLauncher jobLauncher =(JobLauncher)context.getBean("jobLauncher");
 		Job job =(Job)context.getBean("helloSpringBatch");
 		JobExecution jobExecution = jobLauncher.run(job, new JobParameters());
-		System.out.println("Exit Status :: "+jobExecution.getStatus());
+		System.out.println("Exit Status :: "+jobExecution.getStatus());*/
 	}
 }

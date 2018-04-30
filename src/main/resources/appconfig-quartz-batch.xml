@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/batch 
+	http://www.springframework.org/schema/batch/spring-batch-3.0.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:component-scan
+		base-package="com.mastertutorial.mvc.model"></context:component-scan>
+	<bean id="simpleJob"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="report" />
+		<property name="targetMethod" value="printMessage" />
+
+	</bean>
+
+	<bean id="complexJob"
+		class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass"
+			value="com.mastertutorial.mvc.batch.QuartzBatchItemProcessor" />
+		<property name="jobDataMap">
+			<map>
+				<entry key="beanReport" value-ref="beanReport" />
+			</map>
+
+		</property>
+		<property name="durability" value="true" />
+	</bean>
+
+
+
+	<bean id="transactionManager"
+		class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />
+
+
+	<!-- Quartz Scheduler -->
+
+<bean id="simpleTrigger"
+		class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+		<property name="jobDetail" ref="simpleJob"></property>
+		<property name="startDelay" value="1000" />
+		<property name="repeatInterval" value="2000" />
+	</bean>
+	<bean id="cronTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="complexJob"></property>
+		<property name="cronExpression" value="*/10 * * * * ?" />
+	</bean>
+
+
+	<bean
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="jobDetails">
+			<list>
+				<ref bean="simpleJob" />
+				<ref bean="complexJob" />
+			</list>
+
+		</property>
+
+		<property name="triggers">
+			<list>
+				<ref bean="simpleTrigger" />
+				<ref bean="cronTrigger" />
+			</list>
+		</property>
+	</bean>
+
+</beans>
