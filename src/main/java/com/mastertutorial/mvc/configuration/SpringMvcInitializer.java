@@ -1,7 +1,7 @@
 package com.mastertutorial.mvc.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-/*
+
 public class SpringMvcInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 
 	@Override
@@ -23,4 +23,3 @@ public class SpringMvcInitializer extends AbstractAnnotationConfigDispatcherServ
 	}
 
 }
-*/

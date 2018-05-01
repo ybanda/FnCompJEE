@@ -18,13 +18,13 @@ import org.springframework.stereotype.Component;
  * @author Yashwanth
  *
  */
-@Component
+//@Component
 public class JobScheduler {
 
-	@Autowired
+	//@Autowired
 	private JobLauncher jobLauncher;
 
-	@Autowired
+	//@Autowired
 	private Job job;
 
 	public void run() {

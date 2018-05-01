@@ -14,13 +14,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  * @author Yashwanth
  *
  */
-/*@Configuration
+@Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Autowired 
 	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception{
 		auth.inMemoryAuthentication().withUser("admin").password("admin").roles("ADMIN");
+		auth.inMemoryAuthentication().withUser("user").password("user").roles("USER");
 		
 		
 	}
@@ -33,4 +34,3 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 		.and().exceptionHandling().accessDeniedPage("/Access_Denied");
 	}
 }
-*/

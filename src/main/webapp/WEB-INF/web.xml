@@ -5,7 +5,7 @@
     version="3.0">
 
   <display-name>FN Comp JEE</display-name>
-  <context-param>
+ <!--  <context-param>
   	<param-name>contextConfigLocation</param-name>
   	<param-value>/WEB-INF/appconfig-root.xml</param-value>
   </context-param>
@@ -26,5 +26,5 @@
 
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
+    </listener> -->
 </web-app>

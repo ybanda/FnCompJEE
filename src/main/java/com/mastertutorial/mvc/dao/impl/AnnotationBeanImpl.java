@@ -14,7 +14,7 @@ import com.mastertutorial.mvc.dao.AnnotationBean;
  * @author Yashwanth
  *
  */
-@Component
+//@Component
 public class AnnotationBeanImpl implements AnnotationBean{
 
 	
@@ -30,12 +30,12 @@ public class AnnotationBeanImpl implements AnnotationBean{
 	/**
 	 * @param date the date to set
 	 */
-	@Autowired
+	//@Autowired
 	public void setDate(Date date) {
 		this.dt1 = date;
 	}
 
-	@Override
+	//@Override
 	public String printHelloWithAnnotations() {
 		// TODO Auto-generated method stub
 		return dt1.toString();
