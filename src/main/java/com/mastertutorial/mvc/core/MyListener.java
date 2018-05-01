@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 
-import com.mysql.jdbc.log.LogFactory;
 
 /**
  * @author Yashwanth

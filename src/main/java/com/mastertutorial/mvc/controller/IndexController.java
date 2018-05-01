@@ -12,11 +12,11 @@ import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
 @RequestMapping("/index")
 public class IndexController {
 
-	@Autowired
-	SetterInjectionBeanImpl testBean;
+	/*@Autowired
+	SetterInjectionBeanImpl testBean;*/
 	  @RequestMapping(method = RequestMethod.GET)
 	    public String getIndexPage(Model model) {
-		  model.addAttribute("Bean", testBean.getMessage());
+		  model.addAttribute("Bean","test");
 	        return "index";
 	    }
 

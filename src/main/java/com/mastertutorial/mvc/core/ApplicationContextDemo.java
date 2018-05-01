@@ -14,7 +14,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.mastertutorial.mvc.dao.SetterInjectionBean;
 import com.mastertutorial.mvc.dao.impl.DBOperationsDataSourceImpl;
 import com.mastertutorial.mvc.dao.impl.SetterInjectionBeanImpl;
-import com.mastertutorial.mvc.dao.impl.TopicAuditAnnotateImpl;
+//import com.mastertutorial.mvc.dao.impl.TopicAuditAnnotateImpl;
 import com.mastertutorial.mvc.dao.impl.TopicAuditImpl;
 import com.mastertutorial.mvc.model.Customer;
 import com.mastertutorial.mvc.model.Student;
@@ -91,12 +91,12 @@ public class ApplicationContextDemo {
 		}
 		logger.info(" ------------------------Hibernate With Annotations --------------------------------");
 
-		TopicAuditAnnotateImpl topicAnnotate = (TopicAuditAnnotateImpl)context.getBean("topicAuditAnnotate");
+	/*	TopicAuditAnnotateImpl topicAnnotate = (TopicAuditAnnotateImpl)context.getBean("topicAuditAnnotate");
 		for(com.mastertutorial.mvc.model.TopicAuditAnnotate audit:topicAnnotate.getData()) {
 			logger.info(" Topic details :: Id :: "+audit.getId() +"\t :: Topic Id :: "+audit.getTopicId()+" \t :: Topic Date :: "+audit.getDate_updated_ts()
 			+"\t Topic Date Updated :: "+audit.getDate_updated_ts().toString() );
 
-		}
+		}*/
 		Student student = (Student)context.getBean("student");
 		System.out.println("Name = "+student.getName());
 		

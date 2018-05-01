@@ -1,6 +1,6 @@
 /**
  * 
- *//*
+ */
 package com.mastertutorial.mvc.configuration;
 
 import org.springframework.context.annotation.ComponentScan;
@@ -12,13 +12,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-*//**
+/**
  * @author Yashwanth
  *
- *//*
+ */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages="com.mastertutorial")
+@ComponentScan(basePackages="com.mastertutorial.mvc")
 public class ProjectConfigurator extends WebMvcConfigurerAdapter{
 	public ProjectConfigurator() {
 
@@ -33,9 +33,8 @@ public class ProjectConfigurator extends WebMvcConfigurerAdapter{
 		registry.viewResolver(internalResourceViewResolver);
 	}
 	
-	@Override
+	/*@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/client/**").addResourceLocations("/client/**");
-	}
+	}*/
 }
-*/

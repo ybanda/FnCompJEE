@@ -1,6 +1,6 @@
 /**
  * 
- */
+ *//*
 package com.mastertutorial.mvc.dao.impl;
 
 import java.util.List;
@@ -14,26 +14,26 @@ import org.springframework.stereotype.Component;
 import com.mastertutorial.mvc.dao.ITopicAuditAnnotate;
 import com.mastertutorial.mvc.dao.TopicAudit;
 
-/**
+*//**
  * @author Yashwanth
  *
- */
+ *//*
 @Component("topicAuditAnnotate")
 public class TopicAuditAnnotateImpl implements ITopicAuditAnnotate{
 
 	@Autowired
 	private SessionFactory hbmSessionFactory;
 	
-	/**
+	*//**
 	 * @return the sessionFactory
-	 */
+	 *//*
 	public SessionFactory getSessionFactory() {
 		return hbmSessionFactory;
 	}
 
-	/**
+	*//**
 	 * @param sessionFactory the sessionFactory to set
-	 */
+	 *//*
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.hbmSessionFactory = sessionFactory;
 	}
@@ -48,3 +48,4 @@ public class TopicAuditAnnotateImpl implements ITopicAuditAnnotate{
 
 	
 }
+*/

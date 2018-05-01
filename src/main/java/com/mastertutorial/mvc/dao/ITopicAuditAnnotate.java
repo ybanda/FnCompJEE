@@ -11,5 +11,5 @@ import java.util.List;
  */
 public interface ITopicAuditAnnotate {
 
-	public List<com.mastertutorial.mvc.model.TopicAuditAnnotate> getData();
+	//public List<com.mastertutorial.mvc.model.TopicAuditAnnotate> getData();
 }
