@@ -21,7 +21,7 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages="com.mastertutorial.mvc")
-public class ProjectConfigurator {
+public class ProjectConfigurator extends WebMvcConfigurerAdapter{
 	public ProjectConfigurator() {
 
 	}
@@ -35,8 +35,8 @@ public class ProjectConfigurator {
 		return internalResourceViewResolver;
 	}
 	
-	/*@Override
+	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/client/**").addResourceLocations("/client/**");
-	}*/
+	}
 }

@@ -23,14 +23,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 		auth.inMemoryAuthentication().withUser("admin").password("admin").roles("ADMIN");
 		auth.inMemoryAuthentication().withUser("user").password("user").roles("USER");
 		
-		
 	}
 	
 	protected void configure(HttpSecurity http) throws Exception{
 		http.authorizeRequests()
 		.antMatchers("/","/home").permitAll()
 		.antMatchers("/admin/**").access("hasRole('ADMIN')")
-		.and().formLogin()
-		.and().exceptionHandling().accessDeniedPage("/Access_Denied");
+		//Default Spring Form Login
+		//.and().formLogin()
+		.and().formLogin().loginPage("/login")
+		.usernameParameter("ssoId").passwordParameter("password")
+		.and().csrf()
+		.and().exceptionHandling().accessDeniedPage("/accessDenied");
 	}
 }

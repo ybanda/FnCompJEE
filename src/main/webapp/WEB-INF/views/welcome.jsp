@@ -7,5 +7,6 @@
 <body>
     Greeting : ${welcome}
     This is a welcome page.
+    <a href="./login">Login</a>
 </body>
 </html>
