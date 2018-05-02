@@ -6,6 +6,7 @@ package com.mastertutorial.mvc.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,6 +16,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.mastertutorial.mvc.model.Product;
+import com.mastertutorial.mvc.model.ProductService;
+
 /**
  * @author Yashwanth
  *
@@ -22,9 +26,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HelloWorldController {
 
+	@Autowired
+	ProductService productService;
+	
 	@RequestMapping(value= {"/","/home"},method=RequestMethod.GET)
 	public String homePage(ModelMap model) {
 		System.out.println("HelloWorldController :: Home Page");
+	
 		model.addAttribute("welcome","Welcome to Home Page");
 		return "welcome";
 
@@ -42,8 +50,13 @@ public class HelloWorldController {
 
 		System.out.println("HelloWorldController :: adminPageGet Page");
         model.addAttribute("user", getPrincipal());
-
-		return "admin";
+        System.out.println(productService.getAllProducts());
+        System.out.println("cc Value Before ="+productService.getByName("cc").toString());
+        Product product = new Product("cc",504);
+        productService.updateProduct(product);
+        System.out.println("cc Value After ="+productService.getByName("cc").toString());
+        System.out.println(productService.getAllProducts());
+        return "admin";
 	}
 	@RequestMapping(value = "/accessDenied", method = RequestMethod.GET)
 	public String accessDeniedPage(ModelMap model) {
