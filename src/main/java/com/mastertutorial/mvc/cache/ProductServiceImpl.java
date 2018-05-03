@@ -1,14 +1,17 @@
 /**
  * 
  */
-package com.mastertutorial.mvc.dao.impl;
+package com.mastertutorial.mvc.cache;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
 import com.mastertutorial.mvc.model.Product;
@@ -51,6 +54,7 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
+	@Transactional
 	@CachePut(value = "products", key = "#product.name" , unless="#result==null")
 	public Product updateProduct(Product product) {
 		for(Product prod:products) {
@@ -72,6 +76,10 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
+	@Caching(evict= {
+			@CacheEvict(value="products",key="#product.name"),
+			@CacheEvict(value="items",key="#product.id")
+	})
 	public List<Product> getAllProducts() {
 		// TODO Auto-generated method stub
 		return products;
