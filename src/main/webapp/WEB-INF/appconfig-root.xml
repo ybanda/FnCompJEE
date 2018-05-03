@@ -10,6 +10,13 @@
    <import resource="appconfig-mvc.xml"/> 
     <import resource="ehcache.xml"/> 
 
+<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+		 <!-- setting maximum upload size -->
+		<property name="maxUploadSize" value="100000" />
+
+	</bean>
     <!-- Scans within the base package of the application for @Component classes to configure as beans -->
     <!-- <context:component-scan base-package="com.mastertutorial.*"/> -->
     

@@ -8,6 +8,7 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
@@ -22,6 +23,7 @@ import com.mastertutorial.mvc.model.ProductService;
  *
  */
 @Service("productService")
+//@CacheConfig(cacheNames="products", keyGenerator="myKeyGenerator")
 public class ProductServiceImpl implements ProductService {
 
 	private static List<Product> products;
@@ -75,11 +77,11 @@ public class ProductServiceImpl implements ProductService {
 
 	}
 
-	@Override
+	/*@Override
 	@Caching(evict= {
 			@CacheEvict(value="products",key="#product.name"),
 			@CacheEvict(value="items",key="#product.id")
-	})
+	})*/
 	public List<Product> getAllProducts() {
 		// TODO Auto-generated method stub
 		return products;

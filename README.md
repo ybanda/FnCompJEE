@@ -22,6 +22,7 @@ A Website built using Java with Spring Components
 	10) JMS + ActiveMQ.
 	11) SL4J Logger.
 	12) Multi-part File Upload
+	13) Spring Cache/EhCache
 	
 	
 ### OCAJP-8
