@@ -8,7 +8,7 @@ package com.mastertutorial.jse.concepts;
  *
  */
 public class Concepts {
-
+  
 	public void getStatus() {
 		System.out.println("Concepts :: Status");
 	}
@@ -22,11 +22,22 @@ public class Concepts {
 	public static void overrideStatic() {
 		System.out.println("Concepts :: Override Static");
 	}
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String test ;
+		try {
+			test ="Yashwanth";
+			System.out.println("test = "+test);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			test=null;
+		}
 
 	}
 
